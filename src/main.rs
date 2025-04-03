@@ -4,7 +4,7 @@
 // When compiling natively:
 #[cfg(not(target_arch = "wasm32"))]
 fn main() -> eframe::Result {
-    use eframe_porva::App;
+    use eframe_template::App;
 
     env_logger::init(); // Log to stderr (if you run with `RUST_LOG=debug`).
 

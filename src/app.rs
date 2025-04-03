@@ -57,15 +57,15 @@ impl eframe::App for App {
             // UndoRedoText::default().window(ctx, ui, &mut open);
             // self.undo_redo_text.ui(ui);
 
-            ui.horizontal(|ui| {
-                ui.label("Write something: ");
-                ui.text_edit_singleline(&mut self.label);
-            });
+            // ui.horizontal(|ui| {
+            //     ui.label("Write something: ");
+            //     ui.text_edit_singleline(&mut self.label);
+            // });
 
-            ui.add(egui::Slider::new(&mut self.value, 0.0..=10.0).text("value"));
-            if ui.button("Increments").clicked() {
-                self.value += 1.0;
-            }
+            // ui.add(egui::Slider::new(&mut self.value, 0.0..=10.0).text("value"));
+            // if ui.button("Increments").clicked() {
+            //     self.value += 1.0;
+            // }
 
             // MadeWithEgui::ui(ui);
         });
