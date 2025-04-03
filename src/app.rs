@@ -67,7 +67,7 @@ impl eframe::App for App {
                 self.value += 1.0;
             }
 
-            MadeWithEgui::ui(ui);
+            // MadeWithEgui::ui(ui);
         });
     }
 }
