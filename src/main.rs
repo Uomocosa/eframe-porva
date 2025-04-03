@@ -4,7 +4,7 @@
 // When compiling natively:
 #[cfg(not(target_arch = "wasm32"))]
 fn main() -> eframe::Result {
-    use eframe_template::App;
+    use eframe_porva::App;
 
     env_logger::init(); // Log to stderr (if you run with `RUST_LOG=debug`).
 
@@ -52,7 +52,7 @@ fn main() {
             .start(
                 canvas,
                 web_options,
-                Box::new(|cc| Ok(Box::new(eframe_template::TemplateApp::new(cc)))),
+                Box::new(|cc| Ok(Box::new(App::new(cc)))),
             )
             .await;
 

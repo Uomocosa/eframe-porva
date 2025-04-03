@@ -918,7 +918,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "eframe_template"
+name = "eframe_porva"
 version = "0.1.0"
 dependencies = [
  "eframe",

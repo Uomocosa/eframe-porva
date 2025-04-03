@@ -1,6 +1,7 @@
 use serde::{Deserialize, Serialize};
 
-use crate::component::{MadeWithEgui, SimpleTopMenuBar};
+// use crate::component::{MadeWithEgui, SimpleTopMenuBar};
+use crate::component::SimpleTopMenuBar;
 
 /// We derive Deserialize/Serialize so we can persist app state on shutdown.
 #[derive(Serialize, Deserialize)]
@@ -51,7 +52,7 @@ impl eframe::App for App {
 
         egui::CentralPanel::default().show(ctx, |ui| {
             // The central panel the region left after adding TopPanel's and SidePanel's
-            ui.heading("eframe template");
+            ui.heading("eframe porva");
             
             // let mut open = true;
             // UndoRedoText::default().window(ctx, ui, &mut open);
